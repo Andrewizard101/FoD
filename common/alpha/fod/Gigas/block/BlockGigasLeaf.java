@@ -1,4 +1,4 @@
-package Gigas.Silva.Blocks;
+package common.alpha.fod.gigas.block;
 
 import java.util.ArrayList;
 import java.util.Random;
@@ -10,7 +10,9 @@ import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
 import net.minecraftforge.common.IShearable;
-import Gigas.Silva.CoreMod.GigasCore;
+
+import common.alpha.fod.gigas.Gigas;
+
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
@@ -23,7 +25,7 @@ public class BlockGigasLeaf extends BlockLeavesBase implements IShearable
     {
         super(par1, par2, Material.leaves, false);
         this.setTickRandomly(true);
-        this.setCreativeTab(GigasCore.GigasTab);
+        this.setCreativeTab(Gigas.GigasTab);
     }
     /**
      * Returns which pass should this block be rendered on. 0 for solids and 1 for alpha

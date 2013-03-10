@@ -1,19 +1,17 @@
-package Gigas.Silva.Dimension;
+package common.alpha.fod.gigas.generation;
 
-import net.minecraft.entity.Entity;
-import net.minecraft.util.MathHelper;
-import net.minecraft.util.Vec3;
 import net.minecraft.world.WorldProvider;
 import net.minecraft.world.biome.WorldChunkManagerHell;
 import net.minecraft.world.chunk.IChunkProvider;
-import Gigas.Silva.CoreMod.GigasCore;
+
+import common.alpha.fod.gigas.Gigas;
 
 public class WorldProviderGigas extends WorldProvider
 {
  public void registerWorldChunkManager()
  {
-  this.worldChunkMgr = new WorldChunkManagerHell(GigasCore.Gigas, 0.8F, 0.1F);
-  this.dimensionId = GigasCore.dimension;
+  this.worldChunkMgr = new WorldChunkManagerHell(Gigas.Gigas, 0.8F, 0.1F);
+  this.dimensionId = Gigas.dimension;
  }
  
  public String getDimensionName() 

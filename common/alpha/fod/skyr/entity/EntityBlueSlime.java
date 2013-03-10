@@ -1,4 +1,4 @@
-package alpha.fod.skyr.entity;
+package common.alpha.fod.skyr.entity;
 import net.minecraft.entity.monster.EntitySlime;
 import net.minecraft.world.World;
 

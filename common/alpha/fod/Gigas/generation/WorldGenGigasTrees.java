@@ -1,11 +1,12 @@
-package Gigas.Silva.Dimension;
+package common.alpha.fod.gigas.generation;
 
 import java.util.Random;
 
 import net.minecraft.block.Block;
 import net.minecraft.world.World;
 import net.minecraft.world.gen.feature.WorldGenerator;
-import Gigas.Silva.CoreMod.GigasCore;
+
+import common.alpha.fod.gigas.Gigas;
 
 public class WorldGenGigasTrees extends WorldGenerator
 {
@@ -39,7 +40,7 @@ public boolean generate(World world, Random random, int i, int j, int k)
                                  if(i1 >= 0 && i1 < 256)
                                  {
                                          int j3 = world.getBlockId(i2, i1, l2);
-                                         if(j3 != 0 && j3 != GigasCore.Gigasleaf.blockID) //Change this to your leaf block.
+                                         if(j3 != 0 && j3 != Gigas.gigasleaves.blockID) //Change this to your leaf block.
                                          {
                                                  flag = false;
                                          }
@@ -72,7 +73,7 @@ public boolean generate(World world, Random random, int i, int j, int k)
                                  int j4 = i4 - k;
                                  if((Math.abs(l3) != i3 || Math.abs(j4) != i3 || random.nextInt(2) != 0 && j2 != 0) && !Block.opaqueCubeLookup[world.getBlockId(k3, k1, i4)])
                                  {
-                                         setBlockAndMetadata(world, k3, k1, i4, GigasCore.Gigasleaf.blockID, 0); //Change to your leaf block.
+                                         setBlockAndMetadata(world, k3, k1, i4, Gigas.gigasleaves.blockID, 0); //Change to your leaf block.
                                  }
                          }
                  }
@@ -80,9 +81,9 @@ public boolean generate(World world, Random random, int i, int j, int k)
          for(int l1 = 0; l1 < l; l1++)
          {
                  int k2 = world.getBlockId(i, j + l1, k);
-                 if(k2 == 0 || k2 == GigasCore.Gigasleaf.blockID)
+                 if(k2 == 0 || k2 == Gigas.gigasleaves.blockID)
                  {
-                         setBlockAndMetadata(world, i, j + l1, k, GigasCore.GigasLogs.blockID, 0); //Change to your wood block.
+                         setBlockAndMetadata(world, i, j + l1, k, Gigas.gigasLogs.blockID, 0); //Change to your wood block.
                  }
          }
          return true;

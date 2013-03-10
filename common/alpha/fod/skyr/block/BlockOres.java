@@ -1,8 +1,6 @@
-package alpha.fod.skyr.block;
+package common.alpha.fod.skyr.block;
 
 import java.util.Random;
-
-import alpha.fod.skyr.SkyrRef;
 
 import net.minecraft.block.BlockStone;
 import net.minecraft.block.material.Material;

@@ -1,5 +1,5 @@
 
-package alpha.fod.skyr.entity;
+package common.alpha.fod.skyr.entity;
 
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.item.EntityItem;

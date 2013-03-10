@@ -1,10 +1,10 @@
-package alpha.fod.skyr.generation;
+package common.alpha.fod.skyr.generation;
 
-import alpha.fod.skyr.Skyr;
 import net.minecraft.world.WorldProvider;
-import net.minecraft.world.biome.BiomeGenBase;
 import net.minecraft.world.biome.WorldChunkManagerHell;
 import net.minecraft.world.chunk.IChunkProvider;
+
+import common.alpha.fod.skyr.Skyr;
 
 public class WorldProviderSkyr extends WorldProvider {
 

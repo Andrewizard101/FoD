@@ -1,8 +1,9 @@
-package alpha.fod.skyr;
+package common.alpha.fod.skyr;
 
-import alpha.fod.skyr.block.BlockSkyweed;
 import net.minecraftforge.event.ForgeSubscribe;
 import net.minecraftforge.event.entity.player.BonemealEvent;
+
+import common.alpha.fod.skyr.block.BlockSkyweed;
 
 public class SkyrEvent {
 

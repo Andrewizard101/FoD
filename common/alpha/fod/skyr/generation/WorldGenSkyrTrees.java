@@ -1,8 +1,7 @@
-package alpha.fod.skyr.generation;
+package common.alpha.fod.skyr.generation;
 
 import java.util.Random;
 
-import net.minecraft.block.Block;
 import net.minecraft.world.World;
 import net.minecraft.world.gen.feature.WorldGenerator;
 

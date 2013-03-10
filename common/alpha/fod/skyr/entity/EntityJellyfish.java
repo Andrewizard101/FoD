@@ -1,10 +1,6 @@
-package alpha.fod.skyr.entity;
+package common.alpha.fod.skyr.entity;
 
 import java.util.List;
-
-import alpha.fod.skyr.Skyr;
-
-
 
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.monster.EntityMob;
@@ -14,8 +10,8 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.util.DamageSource;
 import net.minecraft.world.World;
-import cpw.mods.fml.relauncher.Side;
-import cpw.mods.fml.relauncher.SideOnly;
+
+import common.alpha.fod.skyr.Skyr;
 
 public class EntityJellyfish extends EntityMob
 {

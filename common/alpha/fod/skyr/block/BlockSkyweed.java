@@ -1,21 +1,13 @@
-package alpha.fod.skyr.block;
+package common.alpha.fod.skyr.block;
 
 import java.util.Random;
 
-import alpha.fod.skyr.Skyr;
-import alpha.fod.skyr.SkyrRef;
-
-
-
-import cpw.mods.fml.client.registry.RenderingRegistry;
-import cpw.mods.fml.relauncher.Side;
-import cpw.mods.fml.relauncher.SideOnly;
-
 import net.minecraft.block.BlockFlower;
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.item.EntityItem;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
+
+import common.alpha.fod.skyr.Skyr;
 
 public class BlockSkyweed extends BlockFlower
 {

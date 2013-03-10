@@ -1,4 +1,4 @@
-package alpha.fod.skyr.generation;
+package common.alpha.fod.skyr.generation;
 
 import java.util.List;
 import java.util.Random;

@@ -1,4 +1,4 @@
-package Gigas.Silva.Dimension;
+package common.alpha.fod.gigas.generation;
 
 import java.util.Random;
 

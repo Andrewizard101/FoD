@@ -1,10 +1,10 @@
-package alpha.fod.common;
+package common.alpha.fod.common;
 
-import java.lang.annotation.Annotation;
 import java.lang.reflect.Field;
 
 import net.minecraftforge.common.Configuration;
-import alpha.fod.FOD;
+
+import common.alpha.fod.FOD;
 
 public class CommonConfig {
 	

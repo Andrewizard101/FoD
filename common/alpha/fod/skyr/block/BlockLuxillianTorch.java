@@ -1,4 +1,4 @@
-package alpha.fod.skyr.block;
+package common.alpha.fod.skyr.block;
 
 import static net.minecraftforge.common.ForgeDirection.EAST;
 import static net.minecraftforge.common.ForgeDirection.NORTH;
@@ -7,11 +7,8 @@ import static net.minecraftforge.common.ForgeDirection.WEST;
 
 import java.util.Random;
 
-import alpha.fod.skyr.SkyrRef;
-
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.util.AxisAlignedBB;
 import net.minecraft.util.MovingObjectPosition;
 import net.minecraft.util.Vec3;

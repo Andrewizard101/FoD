@@ -1,4 +1,4 @@
-package Gigas.Silva.Blocks;
+package common.alpha.fod.gigas.block;
 
 import java.util.List;
 import java.util.Random;
@@ -8,7 +8,9 @@ import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
-import Gigas.Silva.CoreMod.GigasCore;
+
+import common.alpha.fod.gigas.Gigas;
+
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
@@ -17,7 +19,7 @@ public class BlockGigasLog extends Block
     public BlockGigasLog(int par1)
     {
         super(par1, Material.wood);
-        this.setCreativeTab(GigasCore.GigasTab);
+        this.setCreativeTab(Gigas.GigasTab);
     }
 
     // this sets how the block is rendered. i recomend keeping it at 31. 

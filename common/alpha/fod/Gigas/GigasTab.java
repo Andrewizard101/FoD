@@ -1,4 +1,6 @@
-package Gigas.Silva.CoreMod;
+package common.alpha.fod.gigas;
+
+import common.alpha.fod.gigas.Gigas;
 
 import net.minecraft.creativetab.CreativeTabs;
 import cpw.mods.fml.relauncher.Side;
@@ -16,7 +18,7 @@ public final class GigasTab extends CreativeTabs
         public int getTabIconItemIndex()
         {
            //there is a diference between items and blocks. will give an example of both
-                return GigasCore.GigasPortal.blockID;//items
+                return Gigas.gigasPortal.blockID;//items
                // return Yourmod.YourBlock.BlockID; for if you want to use a block
         }
    

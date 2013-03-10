@@ -1,19 +1,13 @@
-package alpha.fod.skyr.block;
+package common.alpha.fod.skyr.block;
 
 import java.util.Random;
 
-import alpha.fod.skyr.Skyr;
-import alpha.fod.skyr.SkyrRef;
-
-
-
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
-import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.world.ColorizerGrass;
-import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
-import cpw.mods.fml.client.registry.RenderingRegistry;
+
+import common.alpha.fod.skyr.Skyr;
+
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 

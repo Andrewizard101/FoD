@@ -1,15 +1,13 @@
-package alpha.fod.skyr.generation;
+package common.alpha.fod.skyr.generation;
 
 import java.util.Random;
-
-import alpha.fod.skyr.Skyr;
-
-
 
 import net.minecraft.block.Block;
 import net.minecraft.world.biome.BiomeGenBase;
 import net.minecraft.world.gen.feature.WorldGenTallGrass;
 import net.minecraft.world.gen.feature.WorldGenerator;
+
+import common.alpha.fod.skyr.Skyr;
 
 public class BiomeGenSkyrPlains extends BiomeGenBase
 {

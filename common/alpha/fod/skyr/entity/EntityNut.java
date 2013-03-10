@@ -1,5 +1,5 @@
 
-package alpha.fod.skyr.entity;
+package common.alpha.fod.skyr.entity;
 
 import net.minecraft.entity.EntityLiving;
 import net.minecraft.entity.projectile.EntityThrowable;

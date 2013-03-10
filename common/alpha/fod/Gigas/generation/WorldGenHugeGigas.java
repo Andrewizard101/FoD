@@ -1,4 +1,4 @@
-package Gigas.Silva.Dimension;
+package common.alpha.fod.gigas.generation;
 
 import java.util.Random;
 
@@ -6,7 +6,8 @@ import net.minecraft.block.Block;
 import net.minecraft.util.MathHelper;
 import net.minecraft.world.World;
 import net.minecraft.world.gen.feature.WorldGenerator;
-import Gigas.Silva.CoreMod.GigasCore;
+
+import common.alpha.fod.gigas.Gigas;
 
 public class WorldGenHugeGigas extends WorldGenerator
 {
@@ -106,7 +107,7 @@ public class WorldGenHugeGigas extends WorldGenerator
                         {
                             var11 = par3 + (int)(1.5F + MathHelper.cos(var15) * (float)var13);
                             var12 = par5 + (int)(1.5F + MathHelper.sin(var15) * (float)var13);
-                            this.setBlockAndMetadata(par1World, var11, var14 - 3 + var13 / 2, var12, GigasCore.GigasLogs.blockID, this.woodMetadata);
+                            this.setBlockAndMetadata(par1World, var11, var14 - 3 + var13 / 2, var12, Gigas.gigasLogs.blockID, this.woodMetadata);
                         }
                     }
 
@@ -116,7 +117,7 @@ public class WorldGenHugeGigas extends WorldGenerator
 
                         if (var11 == 0 || Block.blocksList[var11] == null || Block.blocksList[var11].isLeaves(par1World, par3, par4 + var10, par5))
                         {
-                            this.setBlockAndMetadata(par1World, par3, par4 + var10, par5, GigasCore.GigasLogs.blockID, this.woodMetadata);
+                            this.setBlockAndMetadata(par1World, par3, par4 + var10, par5, Gigas.gigasLogs.blockID, this.woodMetadata);
 
                             if (var10 > 0)
                             {
@@ -130,7 +131,7 @@ public class WorldGenHugeGigas extends WorldGenerator
 
                             if (var11 == 0 || Block.blocksList[var11] == null || Block.blocksList[var11].isLeaves(par1World, par3 + 1, par4 + var10, par5))
                             {
-                                this.setBlockAndMetadata(par1World, par3 + 1, par4 + var10, par5, GigasCore.GigasLogs.blockID, this.woodMetadata);
+                                this.setBlockAndMetadata(par1World, par3 + 1, par4 + var10, par5, Gigas.gigasLogs.blockID, this.woodMetadata);
 
                                 if (var10 > 0)
                                 {
@@ -142,7 +143,7 @@ public class WorldGenHugeGigas extends WorldGenerator
 
                             if (var11 == 0 || Block.blocksList[var11] == null || Block.blocksList[var11].isLeaves(par1World, par3 + 1, par4 + var10, par5 + 1))
                             {
-                                this.setBlockAndMetadata(par1World, par3 + 1, par4 + var10, par5 + 1, GigasCore.GigasLogs.blockID, this.woodMetadata);
+                                this.setBlockAndMetadata(par1World, par3 + 1, par4 + var10, par5 + 1, Gigas.gigasLogs.blockID, this.woodMetadata);
 
                                 if (var10 > 0)
                                 {
@@ -154,7 +155,7 @@ public class WorldGenHugeGigas extends WorldGenerator
 
                             if (var11 == 0 || Block.blocksList[var11] == null || Block.blocksList[var11].isLeaves(par1World, par3, par4 + var10, par5 + 1))
                             {
-                                this.setBlockAndMetadata(par1World, par3, par4 + var10, par5 + 1, GigasCore.GigasLogs.blockID, this.woodMetadata);
+                                this.setBlockAndMetadata(par1World, par3, par4 + var10, par5 + 1, Gigas.gigasLogs.blockID, this.woodMetadata);
 
                                 if (var10 > 0)
                                 {
@@ -202,7 +203,7 @@ public class WorldGenHugeGigas extends WorldGenerator
                         (par6Random.nextInt(4) != 0 || var12 * var12 + var14 * var14 <= (var10 - 1) * (var10 - 1)) && 
                         (block == null || block.canBeReplacedByLeaves(par1World, var11, var8, var13)))
                     {
-                        this.setBlockAndMetadata(par1World, var11, var8, var13, GigasCore.Gigasleaf.blockID, this.leavesMetadata);
+                        this.setBlockAndMetadata(par1World, var11, var8, var13, Gigas.gigasleaves.blockID, this.leavesMetadata);
                     }
                 }
             }

@@ -1,9 +1,10 @@
-package alpha.fod;
+package common.alpha.fod;
 
-import alpha.fod.common.CommonConfig;
-import alpha.fod.common.CommonProxy;
 import net.minecraftforge.common.Configuration;
-import cpw.mods.fml.common.Loader;
+
+import common.alpha.fod.common.CommonConfig;
+import common.alpha.fod.common.CommonProxy;
+
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.Init;
 import cpw.mods.fml.common.Mod.Instance;
@@ -19,7 +20,7 @@ import cpw.mods.fml.common.network.NetworkMod;
 @NetworkMod(clientSideRequired = true, serverSideRequired = false)
 public class FOD {
 	
-	@SidedProxy(clientSide = "alpha.fod.client.ClientProxy", serverSide = "alpha.fod.common.CommonProxy")
+	@SidedProxy(clientSide = "common.alpha.fod.client.ClientProxy", serverSide = "common.alpha.fod.common.CommonProxy")
 	public static CommonProxy proxy;
 	
 	@Instance("FOD")
@@ -33,8 +34,11 @@ public class FOD {
 	public void preStart(FMLPreInitializationEvent fml){
 		this.baseConfigFile = new Configuration(fml.getSuggestedConfigurationFile());
 		try{
-			if(Class.forName("alpha.fod.skyr.Skyr") != null){
-				this.addNewModToList(Class.forName("alpha.fod.skyr.Skyr").newInstance(), new String[]{"RegisterBiomes", "RegisterRecipes", "RegisterEntities", "Render"});
+			if(Class.forName("common.alpha.fod.skyr.Skyr") != null){
+				this.addNewModToList(Class.forName("common.alpha.fod.skyr.Skyr").newInstance(), new String[]{"RegisterBiomes", "RegisterRecipes", "RegisterEntities", "Render"});
+			}
+			if(Class.forName("common.alpha.fod.gigas.Gigas") != null){
+				this.addNewModToList(Class.forName("common.alpha.fod.gigas.Gigas").newInstance(), new String[]{"RegisterBiomes", "RegisterRecipes", "RegisterEntities", "Render"});
 			}
 		}
 		catch(Exception e){

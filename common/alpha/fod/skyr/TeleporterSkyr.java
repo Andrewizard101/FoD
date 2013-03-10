@@ -1,4 +1,4 @@
-package alpha.fod.skyr;
+package common.alpha.fod.skyr;
 
 import java.util.ArrayList;
 import java.util.Iterator;

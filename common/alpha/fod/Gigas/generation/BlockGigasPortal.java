@@ -1,4 +1,4 @@
-package Gigas.Silva.Dimension;
+package common.alpha.fod.gigas.generation;
 
 import java.util.Random;
 
@@ -8,7 +8,8 @@ import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.EntityPlayerMP;
 import net.minecraft.world.World;
-import Gigas.Silva.CoreMod.GigasCore;
+
+import common.alpha.fod.gigas.Gigas;
 
 public class BlockGigasPortal extends BlockPortal
 {
@@ -35,9 +36,9 @@ public class BlockGigasPortal extends BlockPortal
    if (par5Entity instanceof EntityPlayerMP)
    {
     EntityPlayerMP thePlayer = (EntityPlayerMP) par5Entity;
-    if (par5Entity.dimension != GigasCore.dimension)
+    if (par5Entity.dimension != Gigas.dimension)
     {
-     thePlayer.mcServer.getConfigurationManager().transferPlayerToDimension(thePlayer, GigasCore.dimension, new TeleporterGigas(thePlayer.mcServer.worldServerForDimension(GigasCore.dimension)));
+     thePlayer.mcServer.getConfigurationManager().transferPlayerToDimension(thePlayer, Gigas.dimension, new TeleporterGigas(thePlayer.mcServer.worldServerForDimension(Gigas.dimension)));
     }
     else
     {

@@ -1,4 +1,4 @@
-package Gigas.Silva.Dimension;
+package common.alpha.fod.gigas.generation;
 
 import static net.minecraftforge.event.terraingen.DecorateBiomeEvent.Decorate.EventType.SHROOM;
 import static net.minecraftforge.event.terraingen.InitMapGenEvent.EventType.NETHER_BRIDGE;
