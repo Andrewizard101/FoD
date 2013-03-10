@@ -1,5 +1,12 @@
-package common.alpha.fod.gigas;
+package alpha.fod.gigas;
 
+import alpha.fod.common.BuildBlock;
+import alpha.fod.common.Dimension;
+import alpha.fod.gigas.entity.EntityJelly;
+import alpha.fod.gigas.entity.ModelJelly;
+import alpha.fod.gigas.entity.RenderJelly;
+import alpha.fod.gigas.generation.BiomeGenGigas;
+import alpha.fod.gigas.generation.WorldProviderGigas;
 import net.minecraft.block.Block;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.EnumCreatureType;
@@ -7,13 +14,6 @@ import net.minecraft.src.ModLoader;
 import net.minecraft.world.biome.BiomeGenBase;
 import net.minecraftforge.client.MinecraftForgeClient;
 
-import common.alpha.fod.common.BuildBlock;
-import common.alpha.fod.common.Dimension;
-import common.alpha.fod.gigas.entity.EntityJelly;
-import common.alpha.fod.gigas.entity.ModelJelly;
-import common.alpha.fod.gigas.entity.RenderJelly;
-import common.alpha.fod.gigas.generation.BiomeGenGigas;
-import common.alpha.fod.gigas.generation.WorldProviderGigas;
 
 import cpw.mods.fml.client.registry.RenderingRegistry;
 import cpw.mods.fml.relauncher.Side;

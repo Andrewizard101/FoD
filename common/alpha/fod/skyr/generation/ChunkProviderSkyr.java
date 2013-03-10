@@ -1,4 +1,4 @@
-package common.alpha.fod.skyr.generation;
+package alpha.fod.skyr.generation;
 
 import static net.minecraftforge.event.terraingen.InitMapGenEvent.EventType.CAVE;
 import static net.minecraftforge.event.terraingen.InitMapGenEvent.EventType.SCATTERED_FEATURE;

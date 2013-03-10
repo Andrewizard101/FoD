@@ -1,4 +1,4 @@
-package common.alpha.fod.skyr.client;
+package alpha.fod.skyr.client;
 
 import net.minecraft.client.model.ModelBase;
 import net.minecraft.client.model.ModelRenderer;

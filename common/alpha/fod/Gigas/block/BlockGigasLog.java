@@ -1,7 +1,9 @@
-package common.alpha.fod.gigas.block;
+package alpha.fod.gigas.block;
 
 import java.util.List;
 import java.util.Random;
+
+import alpha.fod.gigas.Gigas;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
@@ -9,7 +11,6 @@ import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
 
-import common.alpha.fod.gigas.Gigas;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;

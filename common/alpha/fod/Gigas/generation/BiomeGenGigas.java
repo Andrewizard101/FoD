@@ -1,4 +1,4 @@
-package common.alpha.fod.gigas.generation;
+package alpha.fod.gigas.generation;
 
 import java.util.Random;
 

@@ -1,4 +1,4 @@
-package common.alpha.fod.common;
+package alpha.fod.common;
 
 import net.minecraft.item.ItemFood;
 

@@ -1,5 +1,7 @@
-package common.alpha.fod.skyr.item;
+package alpha.fod.skyr.item;
 
+import alpha.fod.skyr.Skyr;
+import alpha.fod.skyr.SkyrRef;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.entity.player.EntityPlayer;
@@ -7,8 +9,6 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
 
-import common.alpha.fod.skyr.Skyr;
-import common.alpha.fod.skyr.SkyrRef;
 
 public class ItemCorruptedStoneSeed extends Item{
 

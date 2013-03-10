@@ -1,13 +1,14 @@
-package common.alpha.fod.skyr.block;
+package alpha.fod.skyr.block;
 
 import java.util.Random;
+
+import alpha.fod.skyr.Skyr;
 
 import net.minecraft.block.BlockFlower;
 import net.minecraft.entity.item.EntityItem;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
 
-import common.alpha.fod.skyr.Skyr;
 
 public class BlockSkyweed extends BlockFlower
 {

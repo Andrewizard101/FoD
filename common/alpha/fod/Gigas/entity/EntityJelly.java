@@ -1,4 +1,4 @@
-package common.alpha.fod.gigas.entity;
+package alpha.fod.gigas.entity;
 
 import net.minecraft.block.BlockCloth;
 import net.minecraft.entity.Entity;

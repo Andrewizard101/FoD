@@ -1,12 +1,13 @@
-package common.alpha.fod.skyr.block;
+package alpha.fod.skyr.block;
 
 import java.util.Random;
+
+import alpha.fod.skyr.Skyr;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.world.World;
 
-import common.alpha.fod.skyr.Skyr;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;

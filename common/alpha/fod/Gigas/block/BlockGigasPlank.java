@@ -1,4 +1,4 @@
-package common.alpha.fod.gigas.block;
+package alpha.fod.gigas.block;
 
 public class BlockGigasPlank {
 

@@ -1,11 +1,11 @@
-package common.alpha.fod.skyr.item;
+package alpha.fod.skyr.item;
 
+import alpha.fod.skyr.SkyrRef;
 import net.minecraft.item.EnumArmorMaterial;
 import net.minecraft.item.ItemArmor;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.IArmorTextureProvider;
 
-import common.alpha.fod.skyr.SkyrRef;
 
 public class ItemAierBoots extends ItemArmor implements IArmorTextureProvider {
 

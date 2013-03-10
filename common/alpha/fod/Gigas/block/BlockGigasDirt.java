@@ -1,9 +1,9 @@
-package common.alpha.fod.gigas.block;
+package alpha.fod.gigas.block;
 
+import alpha.fod.gigas.Gigas;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 
-import common.alpha.fod.gigas.Gigas;
 
 public class BlockGigasDirt extends Block
 {

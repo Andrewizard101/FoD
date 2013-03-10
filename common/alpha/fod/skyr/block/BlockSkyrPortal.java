@@ -1,6 +1,9 @@
-package common.alpha.fod.skyr.block;
+package alpha.fod.skyr.block;
 
 import java.util.Random;
+
+import alpha.fod.skyr.Skyr;
+import alpha.fod.skyr.TeleporterSkyr;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockPortal;
@@ -8,8 +11,6 @@ import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.EntityPlayerMP;
 import net.minecraft.world.World;
 
-import common.alpha.fod.skyr.Skyr;
-import common.alpha.fod.skyr.TeleporterSkyr;
 
 public class BlockSkyrPortal extends BlockPortal
 {	

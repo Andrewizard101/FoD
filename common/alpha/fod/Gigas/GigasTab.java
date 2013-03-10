@@ -1,6 +1,6 @@
-package common.alpha.fod.gigas;
+package alpha.fod.gigas;
 
-import common.alpha.fod.gigas.Gigas;
+import alpha.fod.gigas.Gigas;
 
 import net.minecraft.creativetab.CreativeTabs;
 import cpw.mods.fml.relauncher.Side;

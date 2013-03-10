@@ -1,11 +1,11 @@
-package common.alpha.fod.skyr.client;
+package alpha.fod.skyr.client;
 
+import alpha.fod.skyr.entity.EntityJellyfish;
 import net.minecraft.client.model.ModelBase;
 import net.minecraft.client.renderer.entity.RenderLiving;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLiving;
 
-import common.alpha.fod.skyr.entity.EntityJellyfish;
 
 
 

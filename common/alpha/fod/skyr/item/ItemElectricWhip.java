@@ -1,5 +1,6 @@
-package common.alpha.fod.skyr.item;
+package alpha.fod.skyr.item;
 
+import alpha.fod.skyr.SkyrRef;
 import net.minecraft.block.Block;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLiving;
@@ -13,7 +14,6 @@ import net.minecraft.potion.PotionEffect;
 import net.minecraft.util.DamageSource;
 import net.minecraft.world.World;
 
-import common.alpha.fod.skyr.SkyrRef;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;

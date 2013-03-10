@@ -1,4 +1,4 @@
-package common.alpha.fod.common;
+package alpha.fod.common;
 
 import net.minecraft.item.EnumToolMaterial;
 import net.minecraft.item.ItemHoe;

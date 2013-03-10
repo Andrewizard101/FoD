@@ -1,13 +1,13 @@
 
-package common.alpha.fod.skyr.item;
+package alpha.fod.skyr.item;
 
+import alpha.fod.skyr.SkyrRef;
+import alpha.fod.skyr.entity.EntityNut;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
 
-import common.alpha.fod.skyr.SkyrRef;
-import common.alpha.fod.skyr.entity.EntityNut;
 
 public class ItemNut extends Item {
 

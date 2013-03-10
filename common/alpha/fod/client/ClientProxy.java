@@ -1,6 +1,6 @@
-package common.alpha.fod.client;
+package alpha.fod.client;
 
-import common.alpha.fod.common.CommonProxy;
+import alpha.fod.common.CommonProxy;
 
 public class ClientProxy extends CommonProxy{
 	

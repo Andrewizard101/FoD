@@ -1,5 +1,19 @@
-package common.alpha.fod.skyr;
+package alpha.fod.skyr;
 
+import alpha.fod.FOD;
+import alpha.fod.common.BuildBlock;
+import alpha.fod.common.BuildItem;
+import alpha.fod.common.Dimension;
+import alpha.fod.common.No;
+import alpha.fod.skyr.client.ModelJellyfish;
+import alpha.fod.skyr.client.RenderJellyfish;
+import alpha.fod.skyr.entity.EntityBlueSlime;
+import alpha.fod.skyr.entity.EntityJellyfish;
+import alpha.fod.skyr.entity.EntityNut;
+import alpha.fod.skyr.generation.BiomeGenSkyr;
+import alpha.fod.skyr.generation.BiomeGenSkyrPlains;
+import alpha.fod.skyr.generation.WorldGeneratorSkyr;
+import alpha.fod.skyr.generation.WorldProviderSkyr;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockPortal;
 import net.minecraft.client.model.ModelSlime;
@@ -18,20 +32,6 @@ import net.minecraftforge.common.DimensionManager;
 import net.minecraftforge.common.EnumHelper;
 import net.minecraftforge.common.MinecraftForge;
 
-import common.alpha.fod.FOD;
-import common.alpha.fod.common.BuildBlock;
-import common.alpha.fod.common.BuildItem;
-import common.alpha.fod.common.Dimension;
-import common.alpha.fod.common.No;
-import common.alpha.fod.skyr.client.ModelJellyfish;
-import common.alpha.fod.skyr.client.RenderJellyfish;
-import common.alpha.fod.skyr.entity.EntityBlueSlime;
-import common.alpha.fod.skyr.entity.EntityJellyfish;
-import common.alpha.fod.skyr.entity.EntityNut;
-import common.alpha.fod.skyr.generation.BiomeGenSkyr;
-import common.alpha.fod.skyr.generation.BiomeGenSkyrPlains;
-import common.alpha.fod.skyr.generation.WorldGeneratorSkyr;
-import common.alpha.fod.skyr.generation.WorldProviderSkyr;
 
 import cpw.mods.fml.client.registry.RenderingRegistry;
 import cpw.mods.fml.common.FMLCommonHandler;

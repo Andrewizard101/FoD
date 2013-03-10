@@ -1,7 +1,9 @@
-package common.alpha.fod.skyr.block;
+package alpha.fod.skyr.block;
 
 import java.util.ArrayList;
 import java.util.Random;
+
+import alpha.fod.skyr.Skyr;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockLeavesBase;
@@ -11,7 +13,6 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
 import net.minecraftforge.common.IShearable;
 
-import common.alpha.fod.skyr.Skyr;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;

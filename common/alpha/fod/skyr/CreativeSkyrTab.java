@@ -1,4 +1,4 @@
-package common.alpha.fod.skyr;
+package alpha.fod.skyr;
 
 import net.minecraft.block.Block;
 import net.minecraft.creativetab.CreativeTabs;

@@ -1,4 +1,4 @@
-package common.alpha.fod.common;
+package alpha.fod.common;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

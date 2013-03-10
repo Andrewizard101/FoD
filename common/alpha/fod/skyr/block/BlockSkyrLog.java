@@ -1,4 +1,4 @@
-package common.alpha.fod.skyr.block;
+package alpha.fod.skyr.block;
 
 import java.util.Random;
 

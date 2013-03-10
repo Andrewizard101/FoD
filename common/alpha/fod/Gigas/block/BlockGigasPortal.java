@@ -1,6 +1,9 @@
-package common.alpha.fod.gigas.block;
+package alpha.fod.gigas.block;
 
 import java.util.Random;
+
+import alpha.fod.gigas.Gigas;
+import alpha.fod.gigas.generation.TeleporterGigas;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockPortal;
@@ -9,8 +12,6 @@ import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.EntityPlayerMP;
 import net.minecraft.world.World;
 
-import common.alpha.fod.gigas.Gigas;
-import common.alpha.fod.gigas.generation.TeleporterGigas;
 
 public class BlockGigasPortal extends BlockPortal
 {

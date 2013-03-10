@@ -1,13 +1,14 @@
-package common.alpha.fod.gigas.generation;
+package alpha.fod.gigas.generation;
 
 import java.util.Random;
+
+import alpha.fod.gigas.Gigas;
 
 import net.minecraft.block.Block;
 import net.minecraft.util.MathHelper;
 import net.minecraft.world.World;
 import net.minecraft.world.gen.feature.WorldGenerator;
 
-import common.alpha.fod.gigas.Gigas;
 
 public class WorldGenHugeGigas extends WorldGenerator
 {

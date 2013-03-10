@@ -1,4 +1,4 @@
-package common.alpha.fod.skyr.generation;
+package alpha.fod.skyr.generation;
 
 import net.minecraft.block.Block;
 import net.minecraft.world.biome.BiomeGenBase;

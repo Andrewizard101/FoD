@@ -1,4 +1,4 @@
-package common.alpha.fod.skyr.block;
+package alpha.fod.skyr.block;
 
 import static net.minecraftforge.common.ForgeDirection.EAST;
 import static net.minecraftforge.common.ForgeDirection.NORTH;

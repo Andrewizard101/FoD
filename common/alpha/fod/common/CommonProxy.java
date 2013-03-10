@@ -1,8 +1,10 @@
-package common.alpha.fod.common;
+package alpha.fod.common;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 import java.util.ArrayList;
+
+import alpha.fod.FOD;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.StepSound;
@@ -10,7 +12,6 @@ import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraftforge.common.DimensionManager;
 
-import common.alpha.fod.FOD;
 
 import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.common.registry.LanguageRegistry;
@@ -40,7 +41,7 @@ public class CommonProxy {
 						if(build != null){
 							String dissectString = build.blockClass();
 							if(dissectString.subSequence(0, 5).equals("CORE.")){
-								Class desiredClass = Class.forName("common.alpha.fod.common." + dissectString.substring(5));
+								Class desiredClass = Class.forName("alpha.fod.common." + dissectString.substring(5));
 								block = getBlock(block, desiredClass, modClass, f, build);
 							}
 							else if(dissectString.subSequence(0, 4).equals("SUB.")){
@@ -59,7 +60,7 @@ public class CommonProxy {
 						if(build != null){
 							String dissectString = build.itemClass();
 							if(dissectString.subSequence(0, 5).equals("CORE.")){
-								Class desiredClass = Class.forName("common.alpha.fod.common." + dissectString.substring(5));
+								Class desiredClass = Class.forName("alpha.fod.common." + dissectString.substring(5));
 								item = getItem(item, desiredClass, modClass, f, build);
 							}
 							else if(dissectString.subSequence(0, 4).equals("SUB.")){

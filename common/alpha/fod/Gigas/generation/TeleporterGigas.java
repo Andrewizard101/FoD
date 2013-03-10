@@ -1,9 +1,11 @@
-package common.alpha.fod.gigas.generation;
+package alpha.fod.gigas.generation;
 
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Random;
+
+import alpha.fod.gigas.Gigas;
 
 import net.minecraft.block.Block;
 import net.minecraft.entity.Entity;
@@ -15,7 +17,6 @@ import net.minecraft.world.PortalPosition;
 import net.minecraft.world.Teleporter;
 import net.minecraft.world.WorldServer;
 
-import common.alpha.fod.gigas.Gigas;
 
 public class TeleporterGigas extends Teleporter
 {

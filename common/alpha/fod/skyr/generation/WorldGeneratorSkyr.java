@@ -1,11 +1,12 @@
-package common.alpha.fod.skyr.generation;
+package alpha.fod.skyr.generation;
 
 import java.util.Random;
+
+import alpha.fod.skyr.Skyr;
 
 import net.minecraft.world.World;
 import net.minecraft.world.chunk.IChunkProvider;
 
-import common.alpha.fod.skyr.Skyr;
 
 import cpw.mods.fml.common.IWorldGenerator;
 

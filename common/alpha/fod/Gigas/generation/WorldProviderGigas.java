@@ -1,10 +1,10 @@
-package common.alpha.fod.gigas.generation;
+package alpha.fod.gigas.generation;
 
+import alpha.fod.gigas.Gigas;
 import net.minecraft.world.WorldProvider;
 import net.minecraft.world.biome.WorldChunkManagerHell;
 import net.minecraft.world.chunk.IChunkProvider;
 
-import common.alpha.fod.gigas.Gigas;
 
 public class WorldProviderGigas extends WorldProvider
 {
