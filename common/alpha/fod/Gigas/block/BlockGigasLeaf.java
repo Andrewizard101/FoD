@@ -25,7 +25,7 @@ public class BlockGigasLeaf extends BlockLeavesBase implements IShearable
     {
         super(par1, par2, Material.leaves, false);
         this.setTickRandomly(true);
-        this.setCreativeTab(Gigas.GigasTab);
+        this.setCreativeTab(Gigas.gigasTab);
     }
     /**
      * Returns which pass should this block be rendered on. 0 for solids and 1 for alpha

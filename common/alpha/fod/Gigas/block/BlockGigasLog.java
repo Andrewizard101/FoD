@@ -19,7 +19,7 @@ public class BlockGigasLog extends Block
     public BlockGigasLog(int par1)
     {
         super(par1, Material.wood);
-        this.setCreativeTab(Gigas.GigasTab);
+        this.setCreativeTab(Gigas.gigasTab);
     }
 
     // this sets how the block is rendered. i recomend keeping it at 31. 

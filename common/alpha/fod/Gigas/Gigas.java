@@ -26,9 +26,10 @@ public class Gigas {
 	
 	public static int gigasPortalId;
 	public static int gigasLogsId;
-	public static int gigasLeavesId;
+	public static int gigasleavesId;
+	public static int GigasId;
 	
-	public static final BiomeGenBase Gigas= (new BiomeGenGigas(28)).setBiomeName("GigasSilva").setTemperatureRainfall(1.2F, 0.9F);;
+	public static BiomeGenBase Gigas= (new BiomeGenGigas(28)).setBiomeName("GigasSilva").setTemperatureRainfall(1.2F, 0.9F);;
 
 	@BuildBlock(blockClass = "SUB.BlockGigasPortal", hardness = 0, params = {"ID", "INT.0"}, stepSound = "soundGrassFootstep")
 	public static Block gigasPortal;
@@ -37,10 +38,9 @@ public class Gigas {
 	@BuildBlock(blockClass = "SUB.BlockGigasLeaf", hardness = 0.2F, stepSound = "soundGrassFootstep", params = {"ID", "INT.3"})
 	public static Block gigasleaves;
 
-	public static CreativeTabs GigasTab = new GigasTab (CreativeTabs.getNextID(),"Gigas"); 
+	public static CreativeTabs gigasTab = new GigasTab(CreativeTabs.getNextID(), "Gigas"); 
 	
 	public void RegisterBiomes(){
-		
 	}
 	
 	public void RegisterRecipes(){

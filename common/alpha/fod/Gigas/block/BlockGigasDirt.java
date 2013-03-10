@@ -10,7 +10,7 @@ public class BlockGigasDirt extends Block
     public BlockGigasDirt(int par1)
     {
         super(par1, Material.wood);
-        this.setCreativeTab(Gigas.GigasTab);
+        this.setCreativeTab(Gigas.gigasTab);
     }
 
   

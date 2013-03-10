@@ -175,23 +175,6 @@ public class Skyr {
 
 	static int startEntityId = 300;
 	
-	@PreInit
-	public void preLoad(FMLPreInitializationEvent event){
-		FOD.addNewModToList(this, new String[]{"RegisterBiomes", "RegisterRecipes", "RegisterEntities"});
-	}
-
-	@Init
-	public void load(FMLInitializationEvent event)
-	{
-		
-		MinecraftForge.EVENT_BUS.register(new SkyrEvent());
-
-	 	if(FMLCommonHandler.instance().getSide().isClient())
-    	{
-    		Render();
-    	}
-	}
-	
 	@SideOnly(Side.CLIENT)
 	public void Render()
 	{
@@ -249,7 +232,8 @@ public class Skyr {
 	
 	public void RegisterBiomes(){
 	 	GameRegistry.registerWorldGenerator(new WorldGeneratorSkyr());
-	 	
+		MinecraftForge.EVENT_BUS.register(new SkyrEvent());
+		
 		SkyrPlains = new BiomeGenSkyrPlains(this.SkyrPlainsId).setBiomeName("SlyrPlains").setTemperatureRainfall(0.8F, 0.4F);
 		skyr = (new BiomeGenSkyr(this.skyrId)).setMinMaxHeight(-1.9F, 1F).setColor(0).setBiomeName("Skyr").setDisableRain();
 	}
