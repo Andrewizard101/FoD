@@ -182,7 +182,7 @@ public class Skyr {
 		
 		//RenderingRegistry.registerEntityRenderingHandler(EntityFloatingCloud.class, new Render-(new Model-, 0.5F));
 		RenderingRegistry.registerEntityRenderingHandler(EntityBlueSlime.class, new RenderSlime(new ModelSlime(16), new ModelSlime(0), 0.5F));
-		RenderingRegistry.registerEntityRenderingHandler(EntityJellyfish.class, new RenderJellyfish(new ModelJellyfish(), 0.5F));
+		RenderingRegistry.registerEntityRenderingHandler(EntityJellyfish.class, new RenderJellyfish(new ModelJellyfish(), 0.3F));
 		
 		// Render step 2: Blocks
 		granite.blockIndexInTexture = RenderingRegistry.addTextureOverride("/terrain.png", "/resources/FoD/Skyr/Blocks/Granite.png");

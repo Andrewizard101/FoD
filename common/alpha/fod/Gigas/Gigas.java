@@ -1,12 +1,11 @@
 package alpha.fod.gigas;
 
+import alpha.fod.FOD;
 import alpha.fod.common.BuildBlock;
 import alpha.fod.common.Dimension;
-import alpha.fod.gigas.entity.EntityJelly;
-import alpha.fod.gigas.entity.ModelJelly;
-import alpha.fod.gigas.entity.RenderJelly;
 import alpha.fod.gigas.generation.BiomeGenGigas;
 import alpha.fod.gigas.generation.WorldProviderGigas;
+import alpha.fod.skyr.entity.EntityJellyfish;
 import net.minecraft.block.Block;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.EnumCreatureType;
@@ -16,6 +15,7 @@ import net.minecraftforge.client.MinecraftForgeClient;
 
 
 import cpw.mods.fml.client.registry.RenderingRegistry;
+import cpw.mods.fml.common.registry.EntityRegistry;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
@@ -43,20 +43,16 @@ public class Gigas {
 	public void RegisterBiomes(){
 	}
 	
-	public void RegisterRecipes(){
-		
+	public void RegisterRecipes(){	
 	}
+	
 	@SideOnly(Side.CLIENT)
 	public void Render(){
         MinecraftForgeClient.preloadTexture("/Gigas/Textures/Blocks.png");
         MinecraftForgeClient.preloadTexture("/Gigas/Textures/Items.png");
-    	RenderingRegistry.instance().registerEntityRenderingHandler(EntityJelly.class, new RenderJelly(new ModelJelly(), 0.3F));
 	}
 	
 	public void RegisterEntities(){
-	    ModLoader.registerEntityID(EntityJelly.class,  "Jelly", 25, 0x2B6308, 0x182410);
-	    ModLoader.addLocalization("entity.Jelly.name", "Jelly");
-		ModLoader.addSpawn(EntityJelly.class, 18, 3, 3, EnumCreatureType.ambient, new BiomeGenBase[] { Gigas });
 	}
 }
 
