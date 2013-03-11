@@ -185,35 +185,35 @@ public class Skyr {
 		RenderingRegistry.registerEntityRenderingHandler(EntityJellyfish.class, new RenderJellyfish(new ModelJellyfish(), 0.3F));
 		
 		// Render step 2: Blocks
-		granite.blockIndexInTexture = RenderingRegistry.addTextureOverride("/terrain.png", "/resources/FoD/Skyr/Blocks/Granite.png");
-		luxOre.blockIndexInTexture = RenderingRegistry.addTextureOverride("/terrain.png", "/resources/FoD/Skyr/Blocks/LightOre.png");
-		luxillianTorch.blockIndexInTexture = RenderingRegistry.addTextureOverride("/terrain.png", "/resources/FoD/Skyr/Blocks/LuxillianTorch.png");
-		luxillianBlock.blockIndexInTexture = RenderingRegistry.addTextureOverride("/terrain.png", "/resources/FoD/Skyr/Blocks/LuxillianBlock.png");
-		corruptedStoneSeedBlock.blockIndexInTexture = RenderingRegistry.addTextureOverride("/terrain.png", "/resources/FoD/Skyr/Blocks/CorruptedSkyrStone.png");
-		SkyrPortal.blockIndexInTexture = RenderingRegistry.addTextureOverride("/terrain.png", "/resources/FoD/Skyr/Blocks/PortalTexture.png");
-		SkyrLeaves.blockIndexInTexture = RenderingRegistry.addTextureOverride("/terrain.png", "/resources/FoD/Skyr/Blocks/SkyLeaves.png");
+		granite.blockIndexInTexture = RenderingRegistry.addTextureOverride("/terrain.png", "/FoD/Skyr/Blocks/Granite.png");
+		luxOre.blockIndexInTexture = RenderingRegistry.addTextureOverride("/terrain.png", "/FoD/Skyr/Blocks/LightOre.png");
+		luxillianTorch.blockIndexInTexture = RenderingRegistry.addTextureOverride("/terrain.png", "/FoD/Skyr/Blocks/LuxillianTorch.png");
+		luxillianBlock.blockIndexInTexture = RenderingRegistry.addTextureOverride("/terrain.png", "/FoD/Skyr/Blocks/LuxillianBlock.png");
+		corruptedStoneSeedBlock.blockIndexInTexture = RenderingRegistry.addTextureOverride("/terrain.png", "/FoD/Skyr/Blocks/CorruptedSkyrStone.png");
+		SkyrPortal.blockIndexInTexture = RenderingRegistry.addTextureOverride("/terrain.png", "/FoD/Skyr/Blocks/PortalTexture.png");
+		SkyrLeaves.blockIndexInTexture = RenderingRegistry.addTextureOverride("/terrain.png", "/FoD/Skyr/Blocks/SkyLeaves.png");
 
 		
 		// Render step 3: Items
-		luxPowder.setIconIndex(RenderingRegistry.addTextureOverride("/gui/items.png", "/resources/FoD/Skyr/Items/LuxillianDust.png"));
-		corruptedStoneSeed.setIconIndex(RenderingRegistry.addTextureOverride("/gui/items.png", "/resources/FoD/Skyr/Items/CorruptedSeeds.png"));
-		blueSlimeball.setIconIndex(RenderingRegistry.addTextureOverride("/gui/items.png", "/resources/FoD/Skyr/Items/BlueSlimeball.png"));
-		aeirPowder.setIconIndex(RenderingRegistry.addTextureOverride("/gui/items.png", "/resources/FoD/Skyr/Items/AeirPowder.png"));
-		nut.setIconIndex(RenderingRegistry.addTextureOverride("/gui/items.png", "/resources/FoD/Skyr/Items/Nut.png"));
-		nutBaked.setIconIndex(RenderingRegistry.addTextureOverride("/gui/items.png", "/resources/FoD/Skyr/Items/Nut.png"));
-		grenadeApple.setIconIndex(RenderingRegistry.addTextureOverride("/gui/items.png", "/resources/FoD/Skyr/Items/GrenadeApple.png"));
-		squirrelMeat.setIconIndex(RenderingRegistry.addTextureOverride("/gui/items.png", "/resources/FoD/Skyr/Items/SquirrelMeat.png"));
-		squirrelMeatCooked.setIconIndex(RenderingRegistry.addTextureOverride("/gui/items.png", "/resources/FoD/Skyr/Items/CookedSquirrelMeat.png"));
+		luxPowder.setIconIndex(RenderingRegistry.addTextureOverride("/gui/items.png", "/FoD/Skyr/Items/LuxillianDust.png"));
+		corruptedStoneSeed.setIconIndex(RenderingRegistry.addTextureOverride("/gui/items.png", "/FoD/Skyr/Items/CorruptedSeeds.png"));
+		blueSlimeball.setIconIndex(RenderingRegistry.addTextureOverride("/gui/items.png", "/FoD/Skyr/Items/BlueSlimeball.png"));
+		aeirPowder.setIconIndex(RenderingRegistry.addTextureOverride("/gui/items.png", "/FoD/Skyr/Items/AeirPowder.png"));
+		nut.setIconIndex(RenderingRegistry.addTextureOverride("/gui/items.png", "/FoD/Skyr/Items/Nut.png"));
+		nutBaked.setIconIndex(RenderingRegistry.addTextureOverride("/gui/items.png", "/FoD/Skyr/Items/Nut.png"));
+		grenadeApple.setIconIndex(RenderingRegistry.addTextureOverride("/gui/items.png", "/FoD/Skyr/Items/GrenadeApple.png"));
+		squirrelMeat.setIconIndex(RenderingRegistry.addTextureOverride("/gui/items.png", "/FoD/Skyr/Items/SquirrelMeat.png"));
+		squirrelMeatCooked.setIconIndex(RenderingRegistry.addTextureOverride("/gui/items.png", "/FoD/Skyr/Items/CookedSquirrelMeat.png"));
 
-		PomeGranate.setIconIndex(RenderingRegistry.addTextureOverride("/gui/items.png", "/resources/FoD/Skyr/Items/Pomegranate.png"));
-		electricCoil.setIconIndex(RenderingRegistry.addTextureOverride("/gui/items.png", "/resources/FoD/Skyr/Items/ElectricCoil.png"));
-		ElectricWhip.setIconIndex(RenderingRegistry.addTextureOverride("/gui/items.png", "/resources/FoD/Skyr/Items/ElectricWhip.png"));
+		PomeGranate.setIconIndex(RenderingRegistry.addTextureOverride("/gui/items.png", "/FoD/Skyr/Items/Pomegranate.png"));
+		electricCoil.setIconIndex(RenderingRegistry.addTextureOverride("/gui/items.png", "/FoD/Skyr/Items/ElectricCoil.png"));
+		ElectricWhip.setIconIndex(RenderingRegistry.addTextureOverride("/gui/items.png", "/FoD/Skyr/Items/ElectricWhip.png"));
 
-		graniteAxe.setIconIndex(RenderingRegistry.addTextureOverride("/gui/items.png", "/resources/FoD/Skyr/WeaponsAndTools/GraniteAxe.png"));
-		granitePick.setIconIndex(RenderingRegistry.addTextureOverride("/gui/items.png", "/resources/FoD/Skyr/WeaponsAndTools/GranitePickaxe.png"));
-		graniteSpade.setIconIndex(RenderingRegistry.addTextureOverride("/gui/items.png", "/resources/FoD/Skyr/WeaponsAndTools/GraniteShovel.png"));
-		graniteSword.setIconIndex(RenderingRegistry.addTextureOverride("/gui/items.png", "/resources/FoD/Skyr/WeaponsAndTools/GraniteSword.png"));
-		graniteHoe.setIconIndex(RenderingRegistry.addTextureOverride("/gui/items.png", "/resources/FoD/Skyr/WeaponsAndTools/GraniteHoe.png"));
+		graniteAxe.setIconIndex(RenderingRegistry.addTextureOverride("/gui/items.png", "/FoD/Skyr/WeaponsAndTools/GraniteAxe.png"));
+		granitePick.setIconIndex(RenderingRegistry.addTextureOverride("/gui/items.png", "/FoD/Skyr/WeaponsAndTools/GranitePickaxe.png"));
+		graniteSpade.setIconIndex(RenderingRegistry.addTextureOverride("/gui/items.png", "/FoD/Skyr/WeaponsAndTools/GraniteShovel.png"));
+		graniteSword.setIconIndex(RenderingRegistry.addTextureOverride("/gui/items.png", "/FoD/Skyr/WeaponsAndTools/GraniteSword.png"));
+		graniteHoe.setIconIndex(RenderingRegistry.addTextureOverride("/gui/items.png", "/FoD/Skyr/WeaponsAndTools/GraniteHoe.png"));
 	}
 	
 	public static int getUniqueEntityId() {
