@@ -148,16 +148,16 @@ public class CommonProxy {
 			item.setMaxDamage(build.damage());
 		if(build.stackSize() < 64)
 			item.setMaxStackSize(build.stackSize());
-		if(build.textFile().length() > 0)
-			item.setTextureFile(build.textFile());
+		//if(build.textFile().length() > 0)
+		//	item.setTextureFile(build.textFile());
 		return item;
 	}
 	
 	public Block getBlock(Block block, Class desiredClass, Object modClass, Field f, BuildBlock build) throws Exception{
 		block = ((Block)desiredClass.getConstructors()[0].newInstance(this.getAnnoObjects(modClass, f, build.params())));
 		block.setBlockName(f.getName());
-		if(build.textFile().length() > 0)
-			block.setTextureFile(build.textFile());
+		//if(build.textFile().length() > 0)
+		//	block.setTextureFile(build.textFile());
 		if(build.hardness() > 0)
 			block.setHardness(build.hardness());
 		if(build.opacity() > 0)

@@ -29,8 +29,4 @@ public class ItemNut extends Item {
 
         return par1ItemStack;
     }
-    
-	public String getTextureFile(){
-		return SkyrRef.item;
-	}
 }

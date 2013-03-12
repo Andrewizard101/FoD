@@ -11,9 +11,5 @@ public class ItemBase extends Item{
 		super(par1);
 		this.textFile = file;
 	}
-	
-	public String getTextureFile(){
-		return textFile;
-	}
 
 }

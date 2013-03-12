@@ -11,9 +11,4 @@ public class ItemAxeBase extends ItemAxe{
 		super(par1, tool);
 		this.textFile = file;
 	}
-	
-	public String getTextureFile(){
-		return textFile;
-	}
-
 }

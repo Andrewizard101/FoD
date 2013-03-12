@@ -113,18 +113,18 @@ public class Skyr {
 
 	public static final EnumToolMaterial GRANITE = EnumHelper.addToolMaterial("GRANITE", 1, 110, 5.0F, 1, 6);
 	
-	@BuildItem(icon = 0, itemClass = "CORE.ItemSwordBase", params = {"ID", "ENUM.GRANITE", "FILE.itemString"})
+	@BuildItem(icon = 0, itemClass = "CORE.ItemSwordBase", params = {"ID", "ENUM.GRANITE", ""})
 	public static Item graniteSword;
-	@BuildItem(icon = 2, itemClass = "CORE.ItemPickaxeBase", params = {"ID", "ENUM.GRANITE", "FILE.itemString"})
+	@BuildItem(icon = 2, itemClass = "CORE.ItemPickaxeBase", params = {"ID", "ENUM.GRANITE", ""})
 	public static Item granitePick;
-	@BuildItem(icon = 4, itemClass = "CORE.ItemAxeBase", params = {"ID", "ENUM.GRANITE", "FILE.itemString"})
+	@BuildItem(icon = 4, itemClass = "CORE.ItemAxeBase", params = {"ID", "ENUM.GRANITE", ""})
 	public static Item graniteAxe;
-	@BuildItem(icon = 1, itemClass = "CORE.ItemSpadeBase", params = {"ID", "ENUM.GRANITE", "FILE.itemString"})
+	@BuildItem(icon = 1, itemClass = "CORE.ItemSpadeBase", params = {"ID", "ENUM.GRANITE", ""})
 	public static Item graniteSpade;
-	@BuildItem(icon = 3, itemClass = "CORE.ItemHoeBase", params = {"ID", "ENUM.GRANITE", "FILE.itemString"})
+	@BuildItem(icon = 3, itemClass = "CORE.ItemHoeBase", params = {"ID", "ENUM.GRANITE", ""})
 	public static Item graniteHoe;
 	
-	@BuildItem(icon = 9, itemClass = "CORE.ItemBase", params = {"ID", "FILE.itemString"})
+	@BuildItem(icon = 9, itemClass = "CORE.ItemBase", params = {"ID", ""})
 	public static Item luxPowder;
 	@BuildItem(icon = 14, itemClass = "SUB.ItemCorruptedStoneSeed", params = {"ID"})
 	public static Item corruptedStoneSeed;
@@ -134,21 +134,21 @@ public class Skyr {
 	public static Item grenadeApple;
 	
 	//Food
-	@BuildItem(icon = 5, itemClass = "CORE.ItemFoodBase", params = {"ID", "INT.1", "BOOLEAN.false", "FILE.itemString"})
+	@BuildItem(icon = 5, itemClass = "CORE.ItemFoodBase", params = {"ID", "INT.1", "BOOLEAN.false", ""})
 	public static Item squirrelMeat;
-	@BuildItem(icon = 15, itemClass = "CORE.ItemFoodBase", params = {"ID", "INT.3", "BOOLEAN.false", "FILE.itemString"})
+	@BuildItem(icon = 15, itemClass = "CORE.ItemFoodBase", params = {"ID", "INT.3", "BOOLEAN.false", ""})
 	public static Item squirrelMeatCooked;
-	@BuildItem(icon = 7, itemClass = "CORE.ItemFoodBase", params = {"ID", "INT.2", "BOOLEAN.false", "FILE.itemString"})
+	@BuildItem(icon = 7, itemClass = "CORE.ItemFoodBase", params = {"ID", "INT.2", "BOOLEAN.false", ""})
 	public static Item nutBaked;
-	@BuildItem(icon = 6, itemClass = "CORE.ItemFoodBase", params = {"ID", "INT.6", "BOOLEAN.false", "FILE.itemString"})
+	@BuildItem(icon = 6, itemClass = "CORE.ItemFoodBase", params = {"ID", "INT.6", "BOOLEAN.false", ""})
 	public static Item PomeGranate;
 	 
 	//Start Mob drops//
-	@BuildItem(icon = 16, itemClass = "CORE.ItemBase", params = {"ID", "FILE.itemString"})
+	@BuildItem(icon = 16, itemClass = "CORE.ItemBase", params = {"ID", ""})
 	public static Item blueSlimeball;
-	@BuildItem(icon = 17, itemClass = "CORE.ItemBase", params = {"ID", "FILE.itemString"})
+	@BuildItem(icon = 17, itemClass = "CORE.ItemBase", params = {"ID", ""})
 	public static Item aeirPowder;
-	@BuildItem(icon = 13, itemClass = "CORE.ItemBase", params = {"ID", "FILE.itemString"})
+	@BuildItem(icon = 13, itemClass = "CORE.ItemBase", params = {"ID", ""})
 	public static Item electricCoil;
 	//food form mobs is in food
 	public static final EnumArmorMaterial AEIRBOOTS = EnumHelper.addArmorMaterial("AierBoots", 10, new int[] { 1, 3, 2, 1 }, 15);
@@ -193,7 +193,6 @@ public class Skyr {
 		SkyrPortal.blockIndexInTexture = RenderingRegistry.addTextureOverride("/terrain.png", "/FoD/Skyr/Blocks/PortalTexture.png");
 		SkyrLeaves.blockIndexInTexture = RenderingRegistry.addTextureOverride("/terrain.png", "/FoD/Skyr/Blocks/SkyLeaves.png");
 
-		
 		// Render step 3: Items
 		luxPowder.setIconIndex(RenderingRegistry.addTextureOverride("/gui/items.png", "/FoD/Skyr/Items/LuxillianDust.png"));
 		corruptedStoneSeed.setIconIndex(RenderingRegistry.addTextureOverride("/gui/items.png", "/FoD/Skyr/Items/CorruptedSeeds.png"));

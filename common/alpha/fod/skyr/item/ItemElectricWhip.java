@@ -98,8 +98,4 @@ public class ItemElectricWhip extends Item {
 	public String func_77825_f() {
 		return this.toolMaterial.toString();
 	}
-	
-	public String getTextureFile(){
-		return SkyrRef.item;
-	}
 }

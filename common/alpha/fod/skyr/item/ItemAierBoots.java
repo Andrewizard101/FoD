@@ -21,9 +21,4 @@ public class ItemAierBoots extends ItemArmor implements IArmorTextureProvider {
 		
 		return "/FoD/Items/AeirBoots.png";
 	}
-	
-	public String getTextureFile(){
-		return SkyrRef.item;
-	}
-
 }

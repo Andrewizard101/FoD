@@ -27,9 +27,4 @@ public class ItemElectricCoil extends Item{
     	
         return false;
     }
-    
-	public String getTextureFile(){
-		return SkyrRef.item;
-	}
-
 }

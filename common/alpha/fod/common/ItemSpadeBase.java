@@ -11,9 +11,4 @@ public class ItemSpadeBase extends ItemSpade{
 		super(par1, tool);
 		this.textFile = file;
 	}
-	
-	public String getTextureFile(){
-		return textFile;
-	}
-
 }

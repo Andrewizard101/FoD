@@ -10,9 +10,4 @@ public class ItemFoodBase extends ItemFood{
 		super(par1, t, h);
 		this.textFile = file;
 	}
-	
-	public String getTextureFile(){
-		return textFile;
-	}
-
 }

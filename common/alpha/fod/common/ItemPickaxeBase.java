@@ -11,9 +11,4 @@ public class ItemPickaxeBase extends ItemPickaxe{
 		super(par1, tool);
 		this.textFile = file;
 	}
-	
-	public String getTextureFile(){
-		return textFile;
-	}
-
 }

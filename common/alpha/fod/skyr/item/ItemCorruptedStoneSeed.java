@@ -29,8 +29,4 @@ public class ItemCorruptedStoneSeed extends Item{
             } else return false;
 		} else return false;
 	}
-	
-	public String getTextureFile(){
-		return SkyrRef.item;
-	}
 }
