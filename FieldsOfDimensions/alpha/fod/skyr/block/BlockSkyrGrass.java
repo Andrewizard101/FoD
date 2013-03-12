@@ -19,9 +19,9 @@ public class BlockSkyrGrass extends Block
     }
 	
     @SideOnly(Side.CLIENT)
-	int top = RenderingRegistry.addTextureOverride("/terrain.png", "/FoD/Blocks/grass_top.png");
+	int top = RenderingRegistry.addTextureOverride("/terrain.png", "/FoD/Skyr/Blocks/grass_top.png");
     @SideOnly(Side.CLIENT)
-	int side = RenderingRegistry.addTextureOverride("/terrain.png", "/FoD/Blocks/grass_side.png");
+	int side = RenderingRegistry.addTextureOverride("/terrain.png", "/FoD/Skyr/Blocks/grass_side.png");
 	
     @SideOnly(Side.CLIENT)
     /**

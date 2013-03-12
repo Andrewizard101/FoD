@@ -19,9 +19,9 @@ public class BlockSkyrLog extends Block
     }
 
     @SideOnly(Side.CLIENT)
-	private int side = RenderingRegistry.addTextureOverride("/terrain.png", "/FoD/Blocks/SkyrLogSide.png");
+	private int side = RenderingRegistry.addTextureOverride("/terrain.png", "/FoD/Skyr/Blocks/SkyrLogSide.png");
 	@SideOnly(Side.CLIENT)
-	private int top = RenderingRegistry.addTextureOverride("/terrain.png", "/FoD/Blocks/SkyrLogTop.png");
+	private int top = RenderingRegistry.addTextureOverride("/terrain.png", "/FoD/Skyr/Blocks/SkyrLogTop.png");
 	
     /**
      * The type of render function that is called for this block

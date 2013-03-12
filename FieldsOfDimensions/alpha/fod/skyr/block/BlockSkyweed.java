@@ -2,16 +2,26 @@ package alpha.fod.skyr.block;
 
 import java.util.Random;
 
-import alpha.fod.skyr.Skyr;
-
 import net.minecraft.block.BlockFlower;
 import net.minecraft.entity.item.EntityItem;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
+import alpha.fod.skyr.Skyr;
+import cpw.mods.fml.client.registry.RenderingRegistry;
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
 
 
 public class BlockSkyweed extends BlockFlower
 {
+	
+	@SideOnly(Side.CLIENT)
+	static int t1 = RenderingRegistry.addTextureOverride("/terrain.png", "/FoD/Skyr/Blocks/Skyweed1.png");
+	@SideOnly(Side.CLIENT)
+	static int t2 = RenderingRegistry.addTextureOverride("/terrain.png", "/FoD/Skyr/Blocks/Skyweed2.png");
+	@SideOnly(Side.CLIENT)
+	static int t3 = RenderingRegistry.addTextureOverride("/terrain.png", "/FoD/Skyr/Blocks/Skyweed3.png");
+	
 	public BlockSkyweed(int par1)
     {
         super(par1, 1);
@@ -102,18 +112,18 @@ public class BlockSkyweed extends BlockFlower
         return 6;
     }
 
+
 	public int getBlockTextureFromSideAndMetadata(int par1, int par2)
     {
-
 		switch (par2) {
 		case 0:
-			return 1;
+			return t1;
 		case 1:
-			return 2;
+			return t2;
 		case 2:
-			return 3;
+			return t3;
 		default:
-			return 1;
+			return t1;
 		}
     }
 	
