@@ -2,13 +2,11 @@ package alpha.fod.skyr.block;
 
 import java.util.Random;
 
-import alpha.fod.skyr.Skyr;
-
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.world.World;
-
-
+import alpha.fod.skyr.Skyr;
+import cpw.mods.fml.client.registry.RenderingRegistry;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
@@ -21,9 +19,17 @@ public class BlockSkyrGrass extends Block
     }
 	
     @SideOnly(Side.CLIENT)
+	int top = RenderingRegistry.addTextureOverride("/terrain.png", "/FoD/Blocks/grass_top.png");
+    @SideOnly(Side.CLIENT)
+	int side = RenderingRegistry.addTextureOverride("/terrain.png", "/FoD/Blocks/grass_side.png");
+	
+    @SideOnly(Side.CLIENT)
+    /**
+     * From the specified side and block metadata retrieves the blocks texture. Args: side, metadata
+     */
     public int getBlockTextureFromSideAndMetadata(int par1, int par2)
     {
-        return par1 == 1 ? 15 : (par1 == 0 ? 2 : 16);
+        return par1 == 1 ? top : (par1 == 0 ? 2 : side);
     }
     
     /**

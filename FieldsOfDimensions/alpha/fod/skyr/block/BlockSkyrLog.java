@@ -5,6 +5,9 @@ import java.util.Random;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.world.World;
+import cpw.mods.fml.client.registry.RenderingRegistry;
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
 
 public class BlockSkyrLog extends Block
 {
@@ -15,6 +18,11 @@ public class BlockSkyrLog extends Block
         this.setRequiresSelfNotify();
     }
 
+    @SideOnly(Side.CLIENT)
+	private int side = RenderingRegistry.addTextureOverride("/terrain.png", "/FoD/Blocks/SkyrLogSide.png");
+	@SideOnly(Side.CLIENT)
+	private int top = RenderingRegistry.addTextureOverride("/terrain.png", "/FoD/Blocks/SkyrLogTop.png");
+	
     /**
      * The type of render function that is called for this block
      */
@@ -85,11 +93,14 @@ public class BlockSkyrLog extends Block
         return var10 | var11;
     }
 
+    /**
+     * From the specified side and block metadata retrieves the blocks texture. Args: side, metadata
+     */
     public int getBlockTextureFromSideAndMetadata(int par1, int par2)
     {
         int var3 = par2 & 12;
         int var4 = par2 & 3;
-        return var3 == 0 && (par1 == 1 || par1 == 0) ? 5 : (var3 == 4 && (par1 == 5 || par1 == 4) ? 5 : (var3 == 8 && (par1 == 2 || par1 == 3) ? 5 : 6));
+        return var3 == 0 && (par1 == 1 || par1 == 0) ? top : (var3 == 4 && (par1 == 5 || par1 == 4) ? top : (var3 == 8 && (par1 == 2 || par1 == 3) ? top : side));
     }
 
     @Override
