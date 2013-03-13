@@ -16,6 +16,7 @@ import alpha.fod.skyr.generation.BiomeGenSkyr;
 import alpha.fod.skyr.generation.BiomeGenSkyrPlains;
 import alpha.fod.skyr.generation.WorldGeneratorSkyr;
 import alpha.fod.skyr.generation.WorldProviderSkyr;
+import alpha.fod.skyr.item.ItemBlockGranite;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockPortal;
 import net.minecraft.client.model.ModelSlime;
@@ -73,7 +74,7 @@ public static final String itemString = SkyrRef.item;
 	public static int nickelOreId;
 	
 	public static int graniteSwordId;
-	public static int granitePickId;
+	public static int granitePickaxeId;
 	public static int graniteAxeId;
 	public static int graniteSpadeId;
 	public static int graniteHoeId;
@@ -192,6 +193,35 @@ public static final String itemString = SkyrRef.item;
     public static BiomeGenBase SkyrPlains;
 
 	static int startEntityId = 300;
+	
+	
+	@PreInit
+	public void preLoad(FMLPreInitializationEvent event){
+		FOD.addNewModToList(this, new String[]{"RegisterBiomes", "RegisterRecipes", "RegisterEntities"});
+	}
+
+	@Init
+	public void load(FMLInitializationEvent event)
+	{
+		
+		MinecraftForge.EVENT_BUS.register(new SkyrEvent());
+
+		registryBlock();
+		
+	 	if(FMLCommonHandler.instance().getSide().isClient())
+    	{
+    		Render();
+    	}
+	 	
+	}
+
+	public void registryBlock(){
+		GameRegistry.registerBlock(granite, ItemBlockGranite.class, "granite");
+		LanguageRegistry.instance().addStringLocalization("tile.granite.granite0.name", "Granite");
+		LanguageRegistry.instance().addStringLocalization("tile.granite.granite1.name", "Smooth Granite");
+		LanguageRegistry.instance().addStringLocalization("tile.granite.granite2.name", "Granite Brick");
+	}
+
 	
 	@SideOnly(Side.CLIENT)
 	public void Render()

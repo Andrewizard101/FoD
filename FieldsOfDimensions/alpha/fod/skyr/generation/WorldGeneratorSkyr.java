@@ -44,7 +44,7 @@ public class WorldGeneratorSkyr implements IWorldGenerator{
 				{
 					int id = world.getBlockId(x + i, y + j, z + k);
 					int belowId = world.getBlockId(x + i, y + j - 1, z + k);
-					if(id == 0 && (belowId == Skyr.granite.blockID || belowId == Skyr.SkyrGrass.blockID)){
+					if(id == 0 && (belowId == Skyr.granite.blockID || belowId == Skyr.SkyrGrass.blockID)) { //change Skyr.granite.blockID to 1 to solve error 
 						System.out.println("This");
 						world.setBlock(x + i, y + j, z + k, Skyr.granite.blockID);
 					}
