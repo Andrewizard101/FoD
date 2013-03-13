@@ -8,7 +8,6 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
 
-
 public class ItemNut extends Item {
 
     public ItemNut(int par1)
@@ -29,4 +28,8 @@ public class ItemNut extends Item {
 
         return par1ItemStack;
     }
+    
+	public String getTextureFile(){
+		return SkyrRef.item;
+	}
 }

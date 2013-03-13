@@ -3,10 +3,12 @@ package alpha.fod.skyr.block;
 import java.util.Random;
 
 import alpha.fod.skyr.Skyr;
+import alpha.fod.skyr.SkyrRef;
+
+
 
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
-
 
 public class BlockCorruptedStone extends Block {
 
@@ -23,5 +25,9 @@ public class BlockCorruptedStone extends Block {
 	public int idDropped(int par1, Random par2Random, int par3) 
 	{
 		return Skyr.corruptedStoneSeed.itemID;
+	}
+	
+	public String getTextureFile(){
+		return SkyrRef.block;
 	}
 }

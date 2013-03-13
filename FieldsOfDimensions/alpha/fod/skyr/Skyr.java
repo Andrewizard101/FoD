@@ -8,6 +8,8 @@ import alpha.fod.common.No;
 import alpha.fod.skyr.client.ModelJellyfish;
 import alpha.fod.skyr.client.RenderJellyfish;
 import alpha.fod.skyr.entity.EntityBlueSlime;
+import alpha.fod.skyr.entity.EntityBlueSlimeBall;
+import alpha.fod.skyr.entity.EntityGrenadeApple;
 import alpha.fod.skyr.entity.EntityJellyfish;
 import alpha.fod.skyr.entity.EntityNut;
 import alpha.fod.skyr.generation.BiomeGenSkyr;
@@ -27,6 +29,7 @@ import net.minecraft.item.EnumArmorMaterial;
 import net.minecraft.item.EnumToolMaterial;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.crafting.FurnaceRecipes;
 import net.minecraft.world.biome.BiomeGenBase;
 import net.minecraftforge.common.DimensionManager;
 import net.minecraftforge.common.EnumHelper;
@@ -47,22 +50,28 @@ import cpw.mods.fml.relauncher.SideOnly;
 
 public class Skyr {
 	
-	public static final String itemString = SkyrRef.item;
+public static final String itemString = SkyrRef.item;
 	
 	public static CreativeTabs skyrTab = new CreativeSkyrTab(CreativeTabs.getNextID(), "Skyr");
 	
 	public static int skyrId;
 	public static int SkyrPortalId;
+	
+	public static int portalShellId;
+	public static int igniterId;
+	public static int SkyrPlainsId;
+	
 	public static int luxOreId;
 	public static int luxillianBlockId;
 	public static int luxillianTorchId;
 	public static int graniteId;
 	public static int corruptedStoneId;
-	public static int corruptedStoneSeedBlockId;
 	public static int SkyrGrassId;
 	public static int SkyweedId;
 	public static int SkyrWoodId;
 	public static int SkyrLeavesId;
+	public static int nickelOreId;
+	
 	public static int graniteSwordId;
 	public static int granitePickId;
 	public static int graniteAxeId;
@@ -78,11 +87,13 @@ public class Skyr {
 	public static int PomeGranateId;
 	public static int blueSlimeballId;
 	public static int aeirPowderId;
+	public static int nickelIngotId;
 	public static int electricCoilId;
+	
 	public static int ElectricWhipId;
-	public static int portalShellId;
-	public static int igniterId;
-	public static int SkyrPlainsId;
+	public static int ElectromagnetId;
+	public static int FluteOfTheWindsId;
+
 	
 	@BuildBlock(blockClass = "SUB.BlockSkyrPortal", hardness = 0, params = {"ID", "INT.10"})
 	public static BlockPortal SkyrPortal;
@@ -90,17 +101,18 @@ public class Skyr {
 	
     @BuildBlock(blockClass = "SUB.BlockOres", hardness = 3F, params = {"ID", "INT.14", "MATERIAL.rock"})
 	public static Block luxOre;
-    @BuildBlock(blockClass = "SUB.BlockLuxillian", hardness = 3.2F, params = {"ID", "INT.13", "MATERIAL.rock"})
+    @BuildBlock(blockClass = "SUB.BlockLuxillian", hardness = 3.2F, params = {"ID", "INT.13", "MATERIAL.circuts"})
 	public static Block luxillianBlock;
     @BuildBlock(blockClass = "SUB.BlockLuxillianTorch", hardness = 0, params = {"ID", "INT.8"}, light = 55)
 	public static Block luxillianTorch;
-    @BuildBlock(blockClass = "SUB.BlockOres", hardness = 2.2F, params = {"ID", "INT.0", "MATERIAL.rock"}, resist = 15F)
+    @No(autoRegister = false, autoName = false)
+    @BuildBlock(blockClass = "SUB.BlockGranite", hardness = 2.2F, params = {"ID", "INT.0", "MATERIAL.rock"}, resist = 15F)
 	public static Block granite;
     @BuildBlock(blockClass = "SUB.BlockCorruptedStone", hardness = 2F, params = {"ID", "INT.20", "MATERIAL.rock"}, resist = 11F)
 	public static Block corruptedStone;
-    @BuildBlock(blockClass = "SUB.BlockCorruptedStoneSeed", hardness = 0, params = {"ID", "INT.20", "MATERIAL.rock"})
-	public static Block corruptedStoneSeedBlock;
-	
+    @BuildBlock(blockClass = "SUB.BlockOres", hardness = 3F, params = {"ID", "INT.14", "MATERIAL.rock"})
+	public static Block nickelOre;
+    
     @No(config = 230)
     @BuildBlock(blockClass = "SUB.BlockSkyrGrass", hardness = 1F, params = {"ID"})
 	public static Block SkyrGrass;
@@ -116,7 +128,7 @@ public class Skyr {
 	@BuildItem(icon = 0, itemClass = "CORE.ItemSwordBase", params = {"ID", "ENUM.GRANITE", ""})
 	public static Item graniteSword;
 	@BuildItem(icon = 2, itemClass = "CORE.ItemPickaxeBase", params = {"ID", "ENUM.GRANITE", ""})
-	public static Item granitePick;
+	public static Item granitePickaxe;
 	@BuildItem(icon = 4, itemClass = "CORE.ItemAxeBase", params = {"ID", "ENUM.GRANITE", ""})
 	public static Item graniteAxe;
 	@BuildItem(icon = 1, itemClass = "CORE.ItemSpadeBase", params = {"ID", "ENUM.GRANITE", ""})
@@ -126,6 +138,8 @@ public class Skyr {
 	
 	@BuildItem(icon = 9, itemClass = "CORE.ItemBase", params = {"ID", ""})
 	public static Item luxPowder;
+	@BuildItem(icon = 0, itemClass = "CORE.ItemBase", params = {"ID", "FILE.itemString"})
+	public static Item nickelIngot;
 	@BuildItem(icon = 14, itemClass = "SUB.ItemCorruptedStoneSeed", params = {"ID"})
 	public static Item corruptedStoneSeed;
 	@BuildItem(icon = 7, itemClass = "SUB.ItemNut", params = {"ID"})
@@ -157,8 +171,12 @@ public class Skyr {
 
 	public static final EnumToolMaterial WHIP = EnumHelper.addToolMaterial("WHIP", 1, 100, 1.0F, 2, 0);
 
-	@BuildItem(icon = 12, itemClass = "SUB.ItemElectricWhip", params = {"ID", "ENUM.WHIP"})
+	@BuildItem(icon = 0, itemClass = "SUB.ItemElectricWhip", params = {"ID", "FILE.itemString"})
 	public static Item ElectricWhip;
+	@BuildItem(icon = 0, itemClass = "SUB.ItemElectromagnet", params = {"ID", "FILE.itemString"})
+	public static Item Electromagnet;
+	@BuildItem(icon = 0, itemClass = "SUB.ItemFluteOfTheWinds", params = {"ID", "FILE.itemString"})
+	public static Item FluteOfTheWinds;
 
 	
 	/*
@@ -189,7 +207,6 @@ public class Skyr {
 		luxOre.blockIndexInTexture = RenderingRegistry.addTextureOverride("/terrain.png", "/FoD/Skyr/Blocks/LightOre.png");
 		luxillianTorch.blockIndexInTexture = RenderingRegistry.addTextureOverride("/terrain.png", "/FoD/Skyr/Blocks/LuxillianTorch.png");
 		luxillianBlock.blockIndexInTexture = RenderingRegistry.addTextureOverride("/terrain.png", "/FoD/Skyr/Blocks/LuxillianBlock.png");
-		corruptedStoneSeedBlock.blockIndexInTexture = RenderingRegistry.addTextureOverride("/terrain.png", "/FoD/Skyr/Blocks/CorruptedSkyrStone.png");
 		SkyrPortal.blockIndexInTexture = RenderingRegistry.addTextureOverride("/terrain.png", "/FoD/Skyr/Blocks/PortalTexture.png");
 		SkyrLeaves.blockIndexInTexture = RenderingRegistry.addTextureOverride("/terrain.png", "/FoD/Skyr/Blocks/SkyLeaves.png");
 		Skyweed.blockIndexInTexture = RenderingRegistry.addTextureOverride("/terrain.png", "/FoD/Skyr/Blocks/Skyweed1.png");
@@ -210,7 +227,7 @@ public class Skyr {
 		ElectricWhip.setIconIndex(RenderingRegistry.addTextureOverride("/gui/items.png", "/FoD/Skyr/Items/ElectricWhip.png"));
 
 		graniteAxe.setIconIndex(RenderingRegistry.addTextureOverride("/gui/items.png", "/FoD/Skyr/WeaponsAndTools/GraniteAxe.png"));
-		granitePick.setIconIndex(RenderingRegistry.addTextureOverride("/gui/items.png", "/FoD/Skyr/WeaponsAndTools/GranitePickaxe.png"));
+		granitePickaxe.setIconIndex(RenderingRegistry.addTextureOverride("/gui/items.png", "/FoD/Skyr/WeaponsAndTools/GranitePickaxe.png"));
 		graniteSpade.setIconIndex(RenderingRegistry.addTextureOverride("/gui/items.png", "/FoD/Skyr/WeaponsAndTools/GraniteShovel.png"));
 		graniteSword.setIconIndex(RenderingRegistry.addTextureOverride("/gui/items.png", "/FoD/Skyr/WeaponsAndTools/GraniteSword.png"));
 		graniteHoe.setIconIndex(RenderingRegistry.addTextureOverride("/gui/items.png", "/FoD/Skyr/WeaponsAndTools/GraniteHoe.png"));
@@ -239,8 +256,29 @@ public class Skyr {
 	}
 	
 	public void RegisterRecipes(){
-		GameRegistry.addRecipe(new ItemStack(this.luxillianTorch, 1), new Object[] {" # ", " I ", '#', luxPowder, 'I', Item.stick});	
+		//Craft
+		GameRegistry.addRecipe(new ItemStack(luxillianTorch, 1), new Object[] {" # ", " I ", '#', luxPowder, 'I', Item.stick});
+		GameRegistry.addRecipe(new ItemStack(luxillianBlock, 1), new Object[] {"###", "###", "###", '#', luxPowder});
+		GameRegistry.addShapelessRecipe(new ItemStack(grenadeApple, 1), new Object[] {PomeGranate, Item.gunpowder});
+		GameRegistry.addRecipe(new ItemStack(granite, 1, 2), new Object[] {"##", "##", '#', new ItemStack(granite, 1, 1)});
+		
+		//Tools and weapons
+		GameRegistry.addRecipe(new ItemStack(ElectricWhip, 1), new Object[] {"  S", " SC", "L C", 'L', Item.leather, 'S', Item.silk, 'C', electricCoil});
+		//GameRegistry.addRecipe(new ItemStack(AeirBoots, 1), new Object[] {"AAA", "F F", "LLL", 'L', Item.leather, 'F', Item.feather, 'A', aeirPowder});
+		GameRegistry.addRecipe(new ItemStack(Electromagnet, 1), new Object[] {"C I", "LLL", "C I", 'L', luxPowder, 'C', electricCoil, 'I', nickelIngot});
+		
+		GameRegistry.addRecipe(new ItemStack(graniteSword, 1), new Object[] {" # ", " # ", " I ", '#', new ItemStack(granite, 1, 0), 'I', Item.stick});
+		GameRegistry.addRecipe(new ItemStack(granitePickaxe, 1), new Object[] {"###", " I ", " I ", '#', new ItemStack(granite, 1, 0), 'I', Item.stick});
+		GameRegistry.addRecipe(new ItemStack(graniteAxe, 1), new Object[] {"## ", "#I ", " I ", '#', new ItemStack(granite, 1, 0), 'I', Item.stick});
+		GameRegistry.addRecipe(new ItemStack(graniteSpade, 1), new Object[] {" # ", " I ", " I ", '#', new ItemStack(granite, 1, 0), 'I', Item.stick});
+		GameRegistry.addRecipe(new ItemStack(graniteHoe, 1), new Object[] {"## ", " I ", " I ", '#', new ItemStack(granite, 1, 0), 'I', Item.stick});
+				
+				//Smelt
+		GameRegistry.addSmelting(squirrelMeat.itemID, new ItemStack(squirrelMeatCooked, 1), 0.35F);
+		GameRegistry.addSmelting(nickelOre.blockID, new ItemStack(nickelIngot, 1), 1.0F);
+		FurnaceRecipes.smelting().addSmelting(granite.blockID, 0, new ItemStack(granite, 1, 1), 0.0F);	
 	}
+
 	
 	public void RegisterEntities()
 	{
@@ -257,9 +295,16 @@ public class Skyr {
 		EntityRegistry.addSpawn(EntityJellyfish.class, 4, 1, 4, EnumCreatureType.monster, SkyrPlains);
 		LanguageRegistry.instance().addStringLocalization("entity.FODSkyr.EntityJellyfish.name", "Jellyfish");
 		
-		EntityRegistry.registerModEntity(EntityNut.class, "Nut", 2, FOD.instance, 45, 2, true);
-
+		EntityRegistry.registerModEntity(EntityBlueSlime.class,"BlueSlime", 3, FOD.instance, 45, 5, true);
+		LanguageRegistry.instance().addStringLocalization("entity.FODSkyr.EntityBlueSlime.name", "BlueSlime");
+		
+		EntityRegistry.registerModEntity(EntityNut.class, "Nut", 202, this, 30, 2, true);
+		EntityRegistry.registerModEntity(EntityGrenadeApple.class, "GrenadeApple", 203, this, 30, 2, true);
+		EntityRegistry.registerModEntity(EntityBlueSlimeBall.class, "Blue Slime Ball", 204, this, 30, 2, true);
+		
 		registerEntityEgg(EntityJellyfish.class, 0xFF4800, 0x00FFF2);
+		registerEntityEgg(EntityBlueSlime.class, 0x2040AF, 0x4060C0);
 	
-	}	
+	}
+
 }

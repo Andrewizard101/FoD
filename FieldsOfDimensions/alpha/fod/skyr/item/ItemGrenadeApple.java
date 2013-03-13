@@ -8,7 +8,6 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
 
-
 public class ItemGrenadeApple extends Item {
 	
 	public ItemGrenadeApple(int par1) {
@@ -27,6 +26,10 @@ public class ItemGrenadeApple extends Item {
 		}
 		
 		return par1ItemStack;
+	}
+	
+	public String getTextureFile(){
+		return SkyrRef.item;
 	}
 	
 }
