@@ -12,7 +12,7 @@ public class BlockOres extends BlockStone
 {
 
 	public BlockOres(int par1, int par2, Material par3Material) {
-		super(par1, par2);
+		super(par1);
 		
 	}
 
